@@ -1,4 +1,4 @@
-def main(a,b,c):
+def main(a, b, c):
     """
     Find the largest of the numbers.
     Args:
@@ -8,4 +8,18 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    return
+    max = a
+    if a > b:
+        if a > c:
+            max = a
+        else:
+            max = c
+    else:
+        if b > c:
+            max = b
+        else:
+            max = c
+    return max
+
+
+print(main(51, 301, 400))
